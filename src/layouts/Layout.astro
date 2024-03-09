@@ -6,16 +6,15 @@ import SEO from '../components/SEO.astro';
 interface Props {
 	description: string
 	title: string
-	preloadImgLCP?: string
 }
 
-const { title, description, preloadImgLCP } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
-		<SEO title={title} description={description} preloadImgLCP={preloadImgLCP}>
+		<SEO title={title} description={description}>
 	</head>
 	<body class=" bg-[#171717] font-ubuntu  ">
 		<Navbar/>
