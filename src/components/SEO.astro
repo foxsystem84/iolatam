@@ -1,0 +1,41 @@
+---
+interface Props {
+	title: string
+	description: string
+	preloadImgLCP: string
+}
+
+const { title, description, preloadImgLCP } = Astro.props
+---
+
+<title>{title}</title>
+
+<meta charset="UTF-8" />
+<meta name="description" content={description} />
+
+<!-- <link rel="preload" href={jost} as="font" type="font/woff2" crossorigin /> -->
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="canonical" href="https://iolatam.com" />
+<meta name="viewport" content="width=device-width" />
+<!-- <meta name="theme-color" content="#d5ff00" /> -->
+
+<meta name="keywords" content="outsorcing, soporte, redes y conectividad, Iolatam, consultoria TI" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content="https:/iolatam.com/default.webp" />
+
+<meta name="og:image" content="/cta.webp" />
+<meta name="og:title" content={title} />
+<meta name="og:description" content={description} />
+<meta name="og:url" content="https:/iolatam.com/default.webp" />
+<meta name="og:site_name" content="Iolatam EIRL" />
+<meta name="og:type" content="website" />
+<meta name="og:locale" content="es_ES" />
+
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />

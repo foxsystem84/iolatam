@@ -1,0 +1,26 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 40" width="148" height="40">
+	<title>lay-fpng</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h148v40h-148z"/>
+		</clipPath>
+		<image  width="54" height="40" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAoCAMAAACCR/kEAAAAAXNSR0IB2cksfwAAAMZQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////FijT2gAAAEJ0Uk5TAAI3eKzS7fgch+L/E5X5VutXBJcKs7GYWRXjnF8uDB76/po6dnm45U2+80yE01XsuubyT/ROOFhamQa2tAUUiOTu+nbFMwAAAYJJREFUeJydlumWgjAMhQMCgkVRcZlxxV3UcRtnc8bt/V9q7PEUezAB4f7qbc4naaCJALIUNaPpRjZr6FpGVeA5mVaOScpZ5hOQnS+wkAp5O45yimGIq1iKhMouBnG5ZZqqVCmKsWqFfFaNphirUc+rR1GM1XGqFE0x9oJRNlpDWcYrgslFbDRb7U6n3Wo24tLsekG01x+I3UG/J2Fe9wGz7rkM5f2hIXFWmFKCdHrDcCxCavCL/QQUjIJq3M7ljCeTsROEQ3bqz2b+/LrQBNaUTyrOErKLm10AvAmsxfeXwi0BsXNhp7ASyzYPrIVbA2J9YX0I7maHBzbCbQCxW2G36bBZ2iSTlGR6L0nKF5Dsdb/7u53/cV18CizZx5XyU055ccC8N2PymhaQtp6X4kRTcJEs7RWL0QodBV9x2DdelZj2+kMUcx/dzPcEBpVfmvojRwfAgcyzfqApXhd8LKLtX9bRfRzC7jGOuso8nWXofHpm5HMp6kjTL5530bVR5B+Mf2neQ7qnNvx1AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 24px;line-height: 29px;fill: #ffffff;font-weight: bold;font-family: "Britannic Bold" } 
+	</style>
+	<g id="Página 1" clip-path="url(#cp1)">
+		<g id="Fondo">
+			<use id="Bitmap" href="#img1" x="0" y="0"/>
+			<text id="FlorLay" style="transform: matrix(1,0,0,1,58,6)" >
+				<tspan x="0" y="18.2" class="t0">FlorLay
+</tspan>
+			</text>
+		</g>
+		<g id="Capa 1">
+		</g>
+		<g id="Capa de Web">
+		</g>
+	</g>
+</svg>

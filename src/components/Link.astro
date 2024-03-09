@@ -1,0 +1,30 @@
+---
+import { navData } from "../config/data.json";
+---
+
+<div>
+ <ul class="flex items-center gap-[3vw]">
+  {
+   navData.map((item) => (
+    <li class="font-normal">
+     <a
+      class=" text-white hover:text-[#a4abb6] focus:text-[#AC111A] transition duration-300 ease-in-out"
+      href={item.path}
+      data-navLink
+     >
+      {item.name}
+     </a>
+    </li>
+   ))
+  }
+ </ul>
+</div>
+
+<script>
+ const navLinks = document.querySelectorAll("[data-navLink]");
+ navLinks.forEach((li) => {
+  if (li.getAttribute("href") === window.location.pathname) {
+   li.setAttribute("style", "color:#fa5557");
+  }
+ });
+</script>

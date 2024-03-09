@@ -1,0 +1,377 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Iolatam - Contactos" description="Empresa de servicios y soluciones TI, ofrecemos servicios de outsorcing y soporte TI para MYPES">
+    <div class="container mx-auto my-40">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-white mx-4 md:mx-0">
+            <div class="space-y-6">
+                <h1 class=" text-3xl md:text-5xl font-semibold">Contactos</h1>
+                <p class="text-xl text-gray-300 leading-8">
+                    Escribenos sobre el tipo de servicio que necesite y en breve un personal de apoyo se pondrá en contacto con usted.
+                </p>
+                <ul class="space-y-4 pt-8">
+                    <li class="flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                      <p class=" text-xl">Jr. Guillermo Peratta<br> Nro. 269 Dpto. 301</p></li>
+                    <li class="flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                      </svg>
+                      <p class=" text-xl">+51 123456789</p></li>
+                    <li class="flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                      </svg>
+                      <p class=" text-xl">info@iolatam.com</p></li>
+                </ul>
+            </div>
+            <!-- Form contact -->
+            <div class="mt-10 md:mt-0">
+                <form
+       action="https://api.web3forms.com/submit"
+       method="POST"
+       id="form"
+       class="needs-validation"
+       novalidate
+      >
+       <input
+        type="hidden"
+        name="access_key"
+        value={import.meta.env.ASTRO_ACCESS_KEY}
+       />
+       <input
+        type="hidden"
+        name="subject"
+        value="Nuevo envio desde https://iolatam.com"
+       />
+       <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+       <div class="flex flex-col mb-0 lg:flex-row lg:mb-6 lg:space-x-4">
+        <div class="mb-6 w-full lg:w-1/2 lg:mb-0">
+         <input
+          type="text"
+          name="Nombre completo"
+          id="first_name"
+          placeholder="Tu nombre"
+          required
+          class="w-full px-3 py-2 placeholder-[#87909d] focus:outline-none focus:border-white text-white"
+         />
+         <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+          Por favor, ingrese su nombre y apellido
+         </div>
+        </div>
+        <div class="mb-6 w-full lg:w-1/2 lg:mb-0">
+         <input
+          type="email"
+          name="Correo"
+          id="email"
+          placeholder="Tu correo"
+          required
+          class="w-full px-3 py-2 placeholder-[#87909d] focus:outline-none focus:border-white text-white"
+         />
+         <div class="empty-feedback text-red-400 text-sm mt-1">
+          Por favor, ingrese su correo.
+         </div>
+         <div class="invalid-feedback text-red-400 text-sm mt-1">
+          Por favor, ingrese un correo válido.
+         </div>
+        </div>
+       </div>
+
+       <div class="mb-6">
+        <input
+         type="text"
+         name="Asunto"
+         id="lname"
+         placeholder="¿Qué servicios necesitas?"
+         required
+         class="w-full px-3 py-2 placeholder-[#87909d] focus:outline-none focus:border-white text-white"
+        />
+        <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+         Por favor, ingrese el asunto.
+        </div>
+       </div>
+       <div class="mb-6">
+        <textarea
+         rows="5"
+         name="Mensaje"
+         id="message"
+         placeholder="Cuentanos más..."
+         class="w-full px-3 py-2  placeholder-[#87909d] focus:outline-none focus:border-white text-white"
+         required></textarea>
+        <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+         Por favor, ingrese su mensaje.
+        </div>
+       </div>
+       <div class="mb-6">
+        <!-- <input
+         disabled
+         id="captcha"
+         type="text"
+         value=""
+         class="px-3 py-2 rounded-md focus:outline-none focus:border-white w-[200px]"
+        /> -->
+        <canvas
+         id="captcha"
+         width="200"
+         height="60"
+         class="px-3 py-2 rounded-md border-[1px] border-[#343A47] focus:outline-none focus:border-[white] w-[200px] block md:inline-block"
+        ></canvas>
+        <input
+         id="captchaEnter"
+         type="text"
+         placeholder="Ingrese codigo captcha"
+         class="px-3 py-2 placeholder-[#87909d] rounded-md focus:outline-none focus:border-[white] w-[200px] text-[white] mt-3 md:ml-3"
+         required
+        />
+        <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+         Por favor, ingrese el código captcha.
+        </div>
+       </div>
+       <div class="mb-6">
+        <button
+         type="submit"
+         class="w-full lg:w-1/3 px-3 py-4 font-semibold text-[#13161c] bg-[#eff1f3] rounded-md border-b-2 border-[#a4abb6] hover:bg-white transition duration-300 ease-in-out"
+        >
+         Enviar mensaje
+        </button>
+       </div>
+       <span class="text-base text-center" id="result"></span>
+      </form>
+            </div>
+        </div>
+    </div>
+
+</Layout>
+
+<style>
+    input,
+    textarea {
+     background: #1D2432;
+     border: 1px solid #343A47;
+     border-radius: 8px;
+    }
+    #captchaTxt {
+     /* background: url(/images/cap.jpg); */
+     color: #ff4500;
+     font-size: 24px;
+     font-weight: 600;
+     text-align: center;
+    }
+   
+    .invalid-feedback,
+    .empty-feedback {
+     display: none;
+    }
+   
+    .was-validated :placeholder-shown:invalid ~ .empty-feedback {
+     display: block;
+    }
+   
+    .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+     display: block;
+    }
+   
+    .is-invalid,
+    .was-validated :invalid {
+     border-color: #dc3545;
+    }
+   </style>
+   
+   <script>
+    //  let captcha: string, chars;
+    //  let check: any;
+    //  let captchaTxt: any;
+   
+    //  function genNewCaptcha() {
+    //   chars = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    //   captcha = chars[Math.floor(Math.random() * chars.length)];
+    //   console.log(captcha);
+    //   for (var i = 0; i < 6; i++) {
+    //    captcha = captcha + chars[Math.floor(Math.random() * chars.length)];
+    //   }
+    //   captchaTxt = document.getElementById("captchaTxt");
+    //   captchaTxt.value = captcha;
+    //  }
+    //  genNewCaptcha();
+   
+    //  function checkCaptcha() {
+    //   check = document.getElementById("captchaEnter");
+   
+    //   if (captcha == check.value) {
+    //    return true;
+    //   } else {
+    //    return false;
+    //   }
+    //  }
+    var canvas = document.getElementById("captcha") as HTMLCanvasElement;
+    var ctx = canvas.getContext("2d");
+    if (ctx) {
+     // Definir los caracteres permitidos para el CAPTCHA
+     var caracteres =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+   
+     // Generar el texto aleatorio para el CAPTCHA
+     var captchaText = "";
+     for (let i = 0; i < 7; i++) {
+      captchaText += caracteres.charAt(
+       Math.floor(Math.random() * caracteres.length)
+      );
+     }
+   
+     // Dibujar la imagen del CAPTCHA
+     ctx.font = "bold 40px Arial";
+     let x = 10;
+     for (let i = 0; i < captchaText.length; i++) {
+      let angle = Math.random() * 0.4 - 0.2;
+      ctx.save();
+      ctx.translate(x, canvas.height / 2);
+      ctx.rotate(angle);
+      ctx.fillText(captchaText.charAt(i), 0, 10);
+      ctx.restore();
+      x += ctx.measureText(captchaText.charAt(i)).width + 2;
+     }
+    }
+    function checkCaptcha() {
+     let inputElement = document.getElementById(
+      "captchaEnter"
+     ) as HTMLInputElement;
+   
+     // if (inputElement !== null) {
+     let input = inputElement.value;
+   
+     if (captchaText == input) {
+      return true;
+     } else {
+      return false;
+     }
+    }
+    newCaptcha();
+    function newCaptcha() {
+     captchaText = "";
+   
+     for (let i = 0; i < 7; i++) {
+      captchaText += caracteres.charAt(
+       Math.floor(Math.random() * caracteres.length)
+      );
+     }
+     let ctx = canvas.getContext("2d");
+     if (ctx) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.font = "bold 40px Arial";
+      let gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+      gradient.addColorStop(0, "rgb(255, 0, 0)");
+      gradient.addColorStop(0.5, "rgb(0, 255, 0)");
+      gradient.addColorStop(1, "rgb(0, 0, 255)");
+      ctx.fillStyle = gradient;
+      // ctx.fillText(captchaText, 10, 60);
+      for (let i = 0; i < 20; i++) {
+       ctx.beginPath();
+       ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
+       ctx.lineTo(Math.random() * canvas.width, Math.random() * canvas.height);
+       ctx.stroke();
+      }
+      let x = 10;
+      for (let i = 0; i < captchaText.length; i++) {
+       let angle = Math.random() * 0.4 - 0.2;
+       ctx.save();
+       ctx.translate(x, canvas.height / 1.5);
+       ctx.rotate(angle);
+       ctx.fillText(captchaText.charAt(i), 0, 0);
+       ctx.restore();
+       x += ctx.measureText(captchaText.charAt(i)).width + 1;
+      }
+     }
+    }
+   
+    // Función para comprobar si el CAPTCHA ingresado es correcto
+   
+    // Función para generar un nuevo CAPTCHA
+   
+    (function () {
+     "use strict";
+     /*
+      * Form Validation
+      */
+   
+     // Fetch all the forms we want to apply custom validation styles to
+     const forms = document.querySelectorAll(".needs-validation");
+     const result = document.getElementById("result") as HTMLSpanElement;
+     // Loop over them and prevent submission
+     Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener(
+       "submit",
+       function (event: any) {
+        if (!form.checkValidity()) {
+         event.preventDefault();
+         event.stopPropagation();
+   
+         form.querySelectorAll(":invalid")[0].focus();
+        } else {
+         /*
+          * Form Submission using fetch()
+          */
+         if (!checkCaptcha()) {
+          event.preventDefault();
+          result.innerHTML = "Captcha invalido";
+          result.classList.add("text-red-500");
+          newCaptcha();
+          return;
+         }
+   
+         const formData = new FormData(form);
+         event.preventDefault();
+         event.stopPropagation();
+   
+         const object: { [key: string]: any } = {};
+         formData.forEach((value: any, key: string) => {
+          object[key] = value;
+         });
+         const json = JSON.stringify(object);
+         result.innerHTML = "Por favor espere...";
+   
+         fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+           "Content-Type": "application/json",
+           Accept: "application/json",
+          },
+          body: json,
+         })
+          .then(async (response) => {
+           let json = await response.json();
+           if (response.status == 200 && checkCaptcha()) {
+            //  console.log(response);
+            result.innerHTML = json.message;
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-green-500");
+           } else {
+            //  console.log(response.status);
+   
+            result.innerHTML = json.message;
+            //result.innerHTML = "Captcha invalido";
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-red-500");
+           }
+          })
+          .catch((error) => {
+           console.log(error);
+           result.innerHTML = "Algo salió mal!";
+          })
+          .then(function () {
+           form.reset();
+           form.classList.remove("was-validated");
+           setTimeout(() => {
+            result.style.display = "none";
+            result.classList.add("text-green-500");
+            window.location.reload();
+           }, 3000);
+          });
+        }
+        form.classList.add("was-validated");
+       },
+       false
+      );
+     });
+    })();
+   </script>
+   

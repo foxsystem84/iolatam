@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro'
+import Nosotros from '../components/Nosotros.astro'
+import Services from '../components/Services.astro'
+import WhyChoose from '../components/WhyChoose'
+import Clients from '../components/Clients.astro'
+import Counter from '../components/Counter'
+import Cta from '../components/Cta.astro'
+import Testimonials from '../components/Testimonials.astro'
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Hero/>	
+		<Clients />
+		<Services/>
+		<Nosotros/>
+		
+		<Counter client:load/>
+		<WhyChoose  client:load/>
+		<Cta/>		
+		<Testimonials/>		
+	</main>
+</Layout>
+
+

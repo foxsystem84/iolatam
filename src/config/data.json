@@ -1,0 +1,98 @@
+{
+    "navData": [
+        {
+            "name": "Inicio",
+            "path": "/"
+        },    
+        {
+            "name": "Contactos",
+            "path": "/contactos/"
+        }
+    ],
+    "logos": [        
+        {
+            "image": "argon.svg",
+            "alt": "argon" 
+        },
+        {
+            "image": "yargo.svg",
+            "alt": "yargo" 
+        },
+        {
+            "image": "libelula.svg",
+            "alt": "libelula" 
+        },
+        {
+            "image": "rush.svg",
+            "alt": "rush" 
+        },
+        {
+            "image": "bgs.svg",
+            "alt": "bgs" 
+        }
+        ,
+        {
+            "image": "tomyko.svg",
+            "alt": "tomyko" 
+        }
+        ,
+        {
+            "image": "lay.svg",
+            "alt": "Lay" 
+        }
+    ],
+    "services": [
+        {
+            "id" : 1,
+            "title": "Outsorcing TI",            
+            "image": "/outsorcing.jpg"
+            
+        },
+        {
+            "id" : 2,
+            "title": "Infraestructura TI",           
+            "image":"/infraestructura.jpg"
+        },
+        {
+            "id" : 3,
+            "title": "Redes y conectividad",           
+            "image": "/redes.jpg"  
+        },
+        {
+            "id" : 4,
+            "title": "Helpdesk",            
+            "image": "/helpdesk.jpg" 
+        },
+        {
+            "id" : 5,
+            "title": "Suministros y Laptop",            
+            "image": "/suministros.jpg"  
+        },
+        {
+            "id" : 6,
+            "title": "Consultorias TI",            
+            "image": "/consultorias.jpg" 
+        }   
+    ],
+    
+    "whyus": [
+        {
+            "id": "1",
+            "title": "Compromiso",
+            "description": "Nos esforzamos por brindar un servicio excepcional y una atención al cliente personalizada en todo momento, lo que nos ha permitido ganar la confianza y lealtad de nuestros clientes."
+            
+        },
+        {
+            "id": "2",
+            "title": "Confianza",
+            "description": "Estamos comprometidos a brindar soluciones de tecnología personalizadas y de alta calidad para ayudar a nuestros clientes a alcanzar sus objetivos empresariales."
+        }
+        ,
+        {
+            "id": "3",
+            "title": "Experiencia",
+            "description": "Nuestro equipo de expertos tiene una amplia experiencia, puedes estar seguro de que estás trabajando con profesionales capacitados y experimentados en la industria de la tecnología."
+        }
+               
+    ]
+}
